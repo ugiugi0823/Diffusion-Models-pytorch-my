@@ -97,9 +97,9 @@ def launch():
     args = parser.parse_args()
     args.run_name = "DDPM_Uncondtional"
     args.epochs = 500
-    args.batch_size = 12
+    args.batch_size = 8
     args.image_size = 64
-    args.dataset_path = r"C:\Users\dome\datasets\landscape_img_folder"
+    args.dataset_path = r"/content/Diffusion-Models-pytorch/datasets/Landscape_classifier_02/training"
     args.device = "cuda"
     args.lr = 3e-4
     train(args)
